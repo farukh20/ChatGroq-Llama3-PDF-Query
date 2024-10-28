@@ -102,3 +102,27 @@ if prompt1:
     else:
         st.write("Please click 'Create Document Embeddings' first to create the vector store.")
 
+
+# Sidebar for user guide
+st.sidebar.title("User Guide")
+st.sidebar.markdown("""
+1. **Upload PDF File**: Use the file uploader to upload your PDF document.
+2. **Create Document Embeddings**: Click the button to process your PDF and create embeddings.
+3. **Ask Questions**: Enter your question in the text input field and press Enter.
+4. **View Responses**: The answer will be displayed along with relevant document excerpts.
+5. **Document Similarity Search**: Expand the section to see which parts of the document were relevant to your question.
+""")
+
+# CSS for background image
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://images.freeimages.com/images/large-previews/630/big-basin-morning-1523946.jpg");
+        background-size: cover;
+        background-position: center;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
