@@ -113,16 +113,20 @@ st.sidebar.markdown("""
 5. **Document Similarity Search**: Expand the section to see which parts of the document were relevant to your question.
 """)
 
-# CSS for background image
 st.markdown(
     """
     <style>
-    .reportview-container {
+    .reportview-container .main {
         background: url("https://images.freeimages.com/images/large-previews/630/big-basin-morning-1523946.jpg");
         background-size: cover;
         background-position: center;
-        }
+        height: 100vh;  /* Ensures it covers the full viewport height */
+        overflow: hidden;  /* Prevents overflow issues */
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
+
+
+
