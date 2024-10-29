@@ -17,3 +17,5 @@ This project is a Streamlit application that integrates with the LangChain frame
 - **FAISS**: For efficient similarity search.
 - **Python-dotenv**: For managing environment variables.
 - **PDF Loader**: For loading PDF documents.
+
+![image](https://github.com/user-attachments/assets/57150fe7-67f1-47db-bad6-ba6cac1ea1a6)
