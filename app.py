@@ -104,29 +104,46 @@ if prompt1:
 
 
 # Sidebar for user guide
-st.sidebar.title("User Guide")
-st.sidebar.markdown("""
-1. **Upload PDF File**: Use the file uploader to upload your PDF document.
-2. **Create Document Embeddings**: Click the button to process your PDF and create embeddings.
-3. **Ask Questions**: Enter your question in the text input field and press Enter.
-4. **View Responses**: The answer will be displayed along with relevant document excerpts.
-5. **Document Similarity Search**: Expand the section to see which parts of the document were relevant to your question.
-""")
+html = '''
+<p style="color:white; font-size:28px; font-weight:bold;">
+    User Guide
+</p>
+'''
+st.sidebar.markdown(html, unsafe_allow_html=True)
 
-st.markdown(
-    """
-    <style>
-    .reportview-container .main {
-        background: url("https://images.freeimages.com/images/large-previews/630/big-basin-morning-1523946.jpg");
-        background-size: cover;
-        background-position: center;
-        height: 100vh;  /* Ensures it covers the full viewport height */
-        overflow: hidden;  /* Prevents overflow issues */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
+html = '''
+<p style="color:white">
+1. Upload PDF File: Use the file uploader to upload your PDF document.<br>
+2. Create Document Embeddings: Click the button to process your PDF and create embeddings.<br>
+3. Ask Questions: Enter your question in the text input field and press Enter.<br>
+4. View Responses: The answer will be displayed along with relevant document excerpts.<br>
+5. Document Similarity Search: Expand the section to see which parts of the document were relevant to your question.
+</p>
+'''
+st.sidebar.markdown(html, unsafe_allow_html=True)
+
+
+# CSS for background image
+page_bd_img ="""
+<style>
+[data-testid="stAppViewContainer" ]{
+background-image: url("https://images.pexels.com/photos/2088208/pexels-photo-2088208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-size: cover;
+}
+[data-testid="stSidebarContent" ]{
+background-image: url("https://images.pexels.com/photos/3934623/pexels-photo-3934623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-size: cover;
+}
+[data-testid="stMarkdownContainer"]{
+background-color: rgba(0,0,0,0);
+}
+[data-testid="stWidgetLabel"]{
+background-color: rgba(0,0,0,0);
+}
+}
+</style>
+"""
+st.markdown(page_bd_img,unsafe_allow_html=True)
 
 
