@@ -18,4 +18,5 @@ This project is a Streamlit application that integrates with the LangChain frame
 - **Python-dotenv**: For managing environment variables.
 - **PDF Loader**: For loading PDF documents.
 
-![image](https://github.com/user-attachments/assets/57150fe7-67f1-47db-bad6-ba6cac1ea1a6)
+![image](https://github.com/user-attachments/assets/3686c256-6d98-497c-b815-e5e8d88fb03b)
+
